@@ -1,0 +1,14 @@
+{
+  "admin.app.main": {
+    "component": "MainPage",
+    "path": "/admin/app/specifications"
+  },
+  "admin.app.details": {
+    "component": "DetailsPage",
+    "path": "/admin/app/specifications/:id"
+  },
+  "admin.app.export": {
+    "component": "ExportPage",
+    "path": "/admin/app/specifications/export"
+  }
+}

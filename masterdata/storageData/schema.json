@@ -1,0 +1,48 @@
+{
+  "title": "StorageData",
+  "type": "object",
+  "properties": {
+    "progress": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "processId": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "skuId": {
+            "type": "number"
+          },
+          "specificationId": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "isVisible": {
+            "type": "boolean"
+          },
+          "error": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "caller": {
+      "type": "string"
+    }
+  },
+  "required": ["progress", "date", "processId", "results", "caller"],
+  "v-default-fields": ["progress", "date", "processId", "results", "caller"],
+  "additionalProperties": false
+}

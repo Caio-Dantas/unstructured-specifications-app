@@ -1,0 +1,13 @@
+{
+  "section": "products",
+  "titleId": "specifications-app.navigation.label-group",
+  "subSection": "specifications",
+  "searchKeyWordsHelpers": "specifications-app.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "specifications-app.navigation.label-table",
+      "path": "/admin/specifications",
+      "searchKeyWordsHelpers": "specifications-app.navigation.table.search.kws"
+    }
+  ]
+}

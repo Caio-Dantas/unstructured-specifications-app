@@ -1,0 +1,72 @@
+{
+  "name": "unstructured-specifications-app",
+  "vendor": "caiodantasdemo",
+  "version": "1.0.1",
+  "title": "Unstructured Specifications App",
+  "description": "Unstructured management app",
+  "mustUpdateAt": "2020-11-11",
+  "categories": [],
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
+  "builders": {
+    "node": "7.x",
+    "docs": "0.x",
+    "masterdata": "1.x",
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "billingOptions": {
+    "type": "free",
+    "support": {
+      "email": "support@com.br",
+      "url": "https://support.com/hc/requests"
+    },
+    "availableCountries": ["*"]
+  }
+}
