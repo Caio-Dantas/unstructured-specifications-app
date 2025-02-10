@@ -1,3 +1,3 @@
-# Specification Service
+# Unstructured Specification App
 
-Backend service for specifications-app managing Bulk Import and Export of unstructured specifications.
+App for managing Bulk Import and Export of unstructured specifications.
